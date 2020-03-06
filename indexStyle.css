@@ -1,0 +1,139 @@
+/* -------------------------------------------------------------------------------- */
+/* This document contains styling that applies to the index.html file*/
+/* -------------------------------------------------------------------------------- */
+html,body {
+    background-image: url("Images/space_temporary.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#navBar {
+    margin: 0 calc(5% + 4px);
+    line-height: 150px;
+    float: right;
+    background: -webkit-linear-gradient(right, rgb(255, 25, 25), rgb(0, 255, 255));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+#navBar a {
+    font-size: 1.25rem;
+    margin-left: 30px;
+}
+
+
+#guyGuy {
+    width: 100%;
+    height: 300px;
+}
+#Guy {
+    width: 100%;
+    height: 100%;
+}
+.characterImage {
+    width: 0;
+    position: absolute;
+}
+
+/* Content, where all the games are displayed on the homepage */
+#gameSection {
+    width: 90%;
+    margin: auto;
+    height: 412px;
+}
+
+.game {
+    width: calc(25% - 16px);
+    margin: 6px;
+    height: 400px;
+    float: left;
+    background: rgb(8, 8, 8);
+    border: solid 2px;
+    background-size: 70%;
+    background-position: center;
+}
+@media screen and (max-width: 1300px) {
+    .game {
+        height: calc((22.5vw - 54px) * 1.5);
+    }
+}
+
+.playButton {
+    max-width: 80%;
+    padding: 10px;
+    font-family: impact;
+    font-size: 1.55rem;
+    line-height: 110%;
+    text-align: center;
+    background: rgb(8, 8, 8);
+    margin: auto;
+    margin-top: calc((22.5vw - 65px) );
+}
+.playButton a {
+    transform: skew(-20deg);
+    margin: auto;
+    text-decoration: none;
+}
+
+.oddGame {
+    border-color: rgb(255, 25, 25);
+    box-shadow: 0px 0px 5px 1px rgb(255, 25, 25);
+
+}
+.evenGame {
+    border-color: rgb(0, 255, 255);
+    box-shadow: 0px 0px 5px 1px rgb(0, 255, 255);
+    
+}
+.evenGame .playButton a {
+    color: rgb(255, 25, 25);
+}
+.oddGame .playButton a {
+    color: rgb(0, 255, 255);
+}
+
+#gameOne { 
+    background-image: url("Images/ticTacBack.png"); 
+}
+#gameTwo {
+    
+}
+#gameThree {
+    
+}
+#gameFour {
+
+}
+
+.oddGame .playButton {
+    border: solid 2px rgb(0, 255, 255);
+    box-shadow: 0px 0px 5px 1px rgb(0, 255, 255);
+}
+.evenGame .playButton {
+    border: solid 2px rgb(255, 25, 25);
+    box-shadow: 0px 0px 5px 1px rgb(255, 25, 25);
+}
+
+.oddGame .playBytton a:visited {
+    color: rgb(0, 255, 255);
+}
+.evenGame .playBytton a:visited {
+    color: rgb(255, 25, 25);
+}
+
+
+#about{
+    padding: 40px 0;
+    color: rgb(216, 216, 216);
+    text-align: center;
+    font-size: 1em;
+    line-height: 30px;
+}
+
+#about p,h1 {
+    width: 50%;
+    min-width: 700px;
+    margin: auto;
+}
+

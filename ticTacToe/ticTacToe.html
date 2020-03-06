@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="ticTacToeStyle.css">
+    <link rel="stylesheet" type="text/css" href="../generalStyle.css">
+</head>
+<body>
+    <div id="topBar"></div>
+    <header>
+        <a href="../index.html">
+            <div id="logo">
+                Daniel Wilsson
+            </div>
+            <div id="logoBar"></div>
+        </a>
+    </header>
+    <main>
+        <div id="headerBorder"></div>
+        <div id="gameContainer">
+            <div id="playerOneScore" style="color: red">
+                0
+            </div>
+            <table id="game">
+                
+            </table>
+            <div id="gameOver"></div>
+            <div id="resetButton" onclick="resetGame()">
+                Reset
+            </div>
+            
+            <div id="playerTwoScore" style="color: rgb(0, 255, 255)">
+                0
+            </div>
+            
+        </div>
+        <div id="gameDescription">
+            <h2>
+                How to play
+            </h2>
+            <p>
+                This game is very simple: claim three squares in a row to get a point. 
+                Players switch turns after every move. To claim a square, you simply
+                need to click it and only blank squares can be claimed by a player. 
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="footerContactSection">
+            <span id="phone">070 000 00 00</span>
+        </div>
+        <div class="footerContactSection">
+            <span id="mail">mail.mail@email.com</span>
+        </div>
+    </footer>
+    <script src="ticTacToeScript.js"></script>
+</body>
+</html>

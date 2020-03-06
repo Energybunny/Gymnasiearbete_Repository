@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>15puzzle</title>
+    <link rel="stylesheet" type="text/css" href="15puzzleStyle.css">
+    <link rel="stylesheet" type="text/css" href="../generalStyle.css">
+</head>
+<body>
+    <div id="topBar"></div>
+    <header>
+        <a href="../index.html">
+            <div id="logo">
+                Daniel Wilsson
+            </div>
+            <div id="logoBar"></div>
+        </a>
+    </header>
+    <main>
+        <div id="headerBorder"></div>
+            <div id="gameContainer">
+                <div id="gameFrame">
+                    
+                </div>
+                <div id="moveCounter">
+                    moves: 0
+                </div>
+                <div id="shuffleButton" onclick="shuffleTiles()">
+                    Re-Shuffle
+                </div>
+                <div id="startScreen">
+                    <div class="gameLogo">
+                        <div class="text">
+                            15Puzzle
+                        </div>
+                    </div>
+                    <div class="startButton" onclick="startGame()">
+                        <div class="text">
+                            Start
+                        </div>
+                    </div>
+                    <div id="size">
+                        <div id="plus">
+
+                        </div>
+                        <div id="minus">
+
+                        </div>
+                    </div>
+                </div>
+                <div id="endScreen">
+                    <div class ="gameLogo">
+                        <div class="text">
+                            WIN!
+                        </div>
+                    </div>
+                    <div class="startButton" onclick="startGame()">
+                        <div class="text">
+                            Restart
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="gameDescription">
+                <h2>
+                    How to play
+                </h2>
+                <p>
+                    The goal of this game is to place the tiles in their correct position. 
+                    You move the tiles by simply clicking them. You can only move a tile
+                    to the empty slot, and only if the tile you wish to move is next to
+                    it. You can choose to re-shuffle the tiles by clicking the button
+                    in the top right-hand corner. 
+                </p>
+            </div>
+    </main>
+    <footer>
+        <div class="footerContactSection">
+            <span id="phone">070 000 00 00</span>
+        </div>
+        <div class="footerContactSection">
+            <span id="mail">mail.mail@email.com</span>
+        </div>
+    </footer>
+    <script src="15puzzleScript.js"></script>
+</body>
+</html>

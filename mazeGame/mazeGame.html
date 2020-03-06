@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maze</title>
+    <link rel="stylesheet" type="text/css" href="mazeGameStyle.css">
+    <link rel="stylesheet" type="text/css" href="../generalStyle.css">
+</head>
+<body>
+    <div id="topBar"></div>
+    <header>
+        <a href="../index.html">
+            <div id="logo">
+                Daniel Wilsson
+            </div>
+            <div id="logoBar"></div>
+        </a>
+    </header>
+    <main>
+        <div id="headerBorder"></div>
+        <div id="gameContainer">
+            <image id="maze" onload="drawImage()" style="width: 0; position: absolute;"></image>
+            <canvas id="myCanvas" width="600" height="400" style="width:600px; height: 400px;"></canvas>
+            <div id="gameOver">
+                Level ? Complete!
+            </div>
+            <div id="resetButton" onclick="nextLevel()">
+                Next Level
+            </div>
+
+        </div>          
+        <div id="gameDescription">
+            <h2>
+                How to play
+            </h2>
+            <p>
+                This game is very simple:
+                Move your character through the maze and reach the goal.
+                The character is controlled using your keyboard with the following
+                key bindings: 
+                <ul>
+                    <li>W: Move Up</li>
+                    <li>A: Move Left</li>
+                    <li>S: Move Down</li>
+                    <li>D: Move Right</li>
+                    <li>R: Reset the level</li>
+                </ul>
+                Currently, there are only four levels implemented and if you 
+                complete them all you start over. 
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="footerContactSection">
+            <span id="phone">070 000 00 00</span>
+        </div>
+        <div class="footerContactSection">
+            <span id="mail">mail.mail@email.com</span>
+        </div>
+    </footer>
+    <script src="mazeGameScript.js"></script>
+</body>
+</html>

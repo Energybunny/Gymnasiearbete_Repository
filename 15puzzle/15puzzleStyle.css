@@ -1,0 +1,123 @@
+:root {
+    --gameWidth: 400px;
+    --gameSize: 5;
+    --borderWidth: 1px;
+    --cellSize: calc(var(--gameWidth)/var(--gameSize) - 2*var(--borderWidth));
+}
+
+#gameContainer {
+    user-select: none;
+    font-weight: bold;
+}
+
+#gameFrame {
+    width: var(--gameWidth);
+    height: var(--gameWidth);
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+}
+#gameFrame div {
+    position: absolute;
+    color: black;
+    width: var(--cellSize);
+    height: var(--cellSize);
+    border: solid var(--borderWidth);
+    cursor: pointer;
+    text-align: center;
+    line-height: var(--cellSize);
+    font-size: 30px;
+    display: inline-block;
+    user-select: none;
+}
+.tile {
+    transition: linear margin 0.02s;
+}
+.tile:hover {
+    background-color: rgb(87, 87, 87)!important;
+}
+
+#shuffleButton {
+
+}
+
+#startScreen,#endScreen {
+    width: 250px;
+    margin: auto;
+    position: absolute;
+    left: calc(50% - 125px);
+    top: calc(223px + var(--gameWidth)/2 - 100px);
+    text-align: center;
+    z-index: 2;
+}
+#endScreen {
+    display: none;
+}
+.gameLogo {
+    background: black;
+    width: 250px;
+    height: 110px;
+    margin: 10px auto;
+    line-height: 110px;
+    font-size: 55px;
+    border: solid 2px black;
+
+    
+}
+.gameLogo .text, .startButton .text {
+    background: -webkit-linear-gradient(left, rgb(255, 25, 25), rgb(0, 255, 255));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+
+.gameLogo .text {
+    transform: skew(-25deg);
+}
+.startButton {
+    width: 130px;
+    height: 50px;
+    margin: 10px auto;
+    cursor: pointer;
+    border: solid 2px black;
+    line-height: 50px;
+    /* color: blue; */
+    font-size: 30px;
+    background: black;
+}
+
+#plus {
+
+}
+#minus {
+
+}
+
+#endScreen {
+    display: none;
+}
+
+#moveCounter,#shuffleButton {
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    position: absolute;
+    top: 185px;
+    background: -webkit-linear-gradient(left, rgb(255, 25, 25), rgb(0, 255, 255));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+
+}
+#moveCounter {
+    left: 25%;
+}
+#shuffleButton {
+    right: 25%;
+    text-align: right;
+    cursor: pointer;
+}
+
+#size {
+
+}
+

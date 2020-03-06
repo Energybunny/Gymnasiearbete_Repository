@@ -1,0 +1,87 @@
+/* -------------------------------------------------------------------------------- */
+/* This document contains styling that applies to the ticTacToe.html file*/
+/* -------------------------------------------------------------------------------- */
+html,body {
+    background-image: url("../Images/ticTacBack.png");
+    background-size: 200px;
+    background-position: center;
+    background-color: rgb(11, 11, 11);
+}
+
+main {
+    height: calc(100vh - 35px);
+    background-color: rgb(11, 11, 11);
+    background-image: url("../Images/wallpaperTTT.png");
+    background-size: calc(25%);
+}
+
+:root {
+    --game-size: 650px;
+}
+
+#gameContainer {
+    width: 540px;
+    height: 450px;
+    margin: 30px auto;
+    color: white;
+}
+
+#game {
+    width: 420px;
+    margin: auto;
+    color: white;
+    border-spacing: 2;
+    background: rgb(255, 25, 25);  
+    float: left;
+}
+#game tr{
+    width: calc(100%/3);
+    height: 140px;
+    background: black;
+}
+#game td{
+    background-size: 100%;
+    padding: 0;
+}
+#game tr td:hover{
+    background-color: rgb(46, 46, 46);
+    cursor: pointer;
+}
+
+#resetButton,#gameOver {
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    background: black;
+    border: solid 2px rgb(0, 255, 255);
+    box-shadow: 0px 0px 5px 1px rgb(0, 255, 255);
+    font-size: 30px;
+    display: none;
+}
+#resetButton {
+    width: 120px;
+    left: calc(50% - 60px);
+    top: 402px;
+    cursor: pointer;
+}
+#resetButton:hover {
+    background: rgb(46, 46, 46);
+}
+#gameOver {
+    width: 250px;
+    top: 313px;
+    font-size: 30px;
+    left: calc(50% - 125px);
+}
+
+#playerOneScore,#playerTwoScore {
+    color: white;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    font-size: 40px;
+}
+
